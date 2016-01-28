@@ -284,8 +284,8 @@ static ngx_int_t ngx_let_apply_binary_integer_op(ngx_http_request_t *r, int op,
 	}
 	
 	if (left == NGX_ERROR || right == NGX_ERROR) {
-		ngx_log_error(NGX_LOG_ALERT, r->connection->log, 0, 
-				"let error parsing argument '%*s'", str->len, str->data);
+		//ngx_log_error(NGX_LOG_ALERT, r->connection->log, 0, 
+		//		"let error parsing argument '%*s'", str->len, str->data);
 		return NGX_ERROR;
 	}
 	
